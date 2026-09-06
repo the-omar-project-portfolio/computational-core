@@ -1,0 +1,170 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyMaFFIoDAkPtb6HnHi/Z7jf",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/the-omar-project-portfolio/computational-core/blob/main/isPrime.py\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "L0YbEScasgSu",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "a2039edb-9dc2-42ab-d907-a4ba1f87d0f7"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "False\n",
+            "False\n",
+            "True\n",
+            "True\n",
+            "False\n",
+            "True\n",
+            "False\n",
+            "True\n",
+            "False\n",
+            "False\n",
+            "False\n",
+            "True\n",
+            "False\n",
+            "True\n",
+            "False\n",
+            "False\n",
+            "False\n",
+            "True\n",
+            "False\n",
+            "True\n",
+            "False\n",
+            "False\n",
+            "False\n",
+            "True\n",
+            "False\n",
+            "False\n",
+            "False\n",
+            "False\n",
+            "False\n",
+            "True\n",
+            "False\n",
+            "True\n",
+            "False\n",
+            "False\n",
+            "False\n",
+            "False\n",
+            "False\n",
+            "True\n",
+            "False\n",
+            "False\n",
+            "False\n",
+            "True\n",
+            "False\n",
+            "True\n",
+            "False\n",
+            "False\n",
+            "False\n",
+            "True\n",
+            "False\n",
+            "False\n",
+            "False\n",
+            "False\n",
+            "False\n",
+            "True\n",
+            "False\n",
+            "False\n",
+            "False\n",
+            "False\n",
+            "False\n",
+            "True\n",
+            "False\n",
+            "True\n",
+            "False\n",
+            "False\n",
+            "False\n",
+            "False\n",
+            "False\n",
+            "True\n",
+            "False\n",
+            "False\n",
+            "False\n",
+            "True\n",
+            "False\n",
+            "True\n",
+            "False\n",
+            "False\n",
+            "False\n",
+            "False\n",
+            "False\n",
+            "True\n",
+            "False\n",
+            "False\n",
+            "False\n",
+            "True\n",
+            "False\n",
+            "False\n",
+            "False\n",
+            "False\n",
+            "False\n",
+            "True\n",
+            "False\n",
+            "False\n",
+            "False\n",
+            "False\n",
+            "False\n",
+            "False\n",
+            "False\n",
+            "True\n",
+            "False\n",
+            "False\n"
+          ]
+        }
+      ],
+      "source": [
+        "import math\n",
+        "\n",
+        "def is_prime(n):\n",
+        "  i = 2\n",
+        "\n",
+        "  if n < 2:\n",
+        "    return False\n",
+        "\n",
+        "  while i <= math.sqrt(n):\n",
+        "    if n % i == 0:\n",
+        "      return False\n",
+        "    else:\n",
+        "      i += 1\n",
+        "  return True\n",
+        "\n",
+        "i = 0\n",
+        "while i < 100:\n",
+        "  print(is_prime(i))\n",
+        "  i += 1"
+      ]
+    }
+  ]
+}
